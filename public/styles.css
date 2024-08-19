@@ -1,0 +1,117 @@
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    background: url('https://static.vecteezy.com/system/resources/previews/030/658/258/large_2x/downtempo-chillout-minimalist-desktop-wallpaper-free-photo.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Высота в 100% от видимой области */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.container {
+    max-width: 1000px; /* Увеличение ширины контейнера */
+    width: 100%;
+    max-height: 90vh; /* Увеличение высоты контейнера */
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow-y: auto; /* Добавление скролла при переполнении */
+}
+
+h1 {
+    text-align: center;
+    color: #f39c12; /* Ярко-желтый цвет */
+}
+
+form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 2px solid #f39c12;
+    border-radius: 4px;
+    outline: none;
+    font-size: 16px; /* Увеличение размера шрифта */
+}
+
+input[type="text"]:focus {
+    border-color: #e67e22; /* Оранжевый цвет при фокусе */
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #3498db; /* Ярко-синий цвет */
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 16px; /* Увеличение размера шрифта */
+}
+
+button:hover {
+    background-color: #2980b9; /* Темно-синий цвет при наведении */
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #ecf0f1;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+li:hover {
+    transform: scale(1.02);
+    background-color: #dfe6e9; /* Более светлый цвет при наведении */
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.delete-btn {
+    background-color: #e74c3c; /* Красный цвет */
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.delete-btn:hover {
+    background-color: #c0392b; /* Темно-красный цвет при наведении */
+}
+
+/* Анимация фона */
+@keyframes backgroundAnimation {
+    0% { background-position: 0% 0%; }
+    50% { background-position: 100% 100%; }
+    100% { background-position: 0% 0%; }
+}
+
+body {
+    animation: backgroundAnimation 30s ease infinite;
+}
